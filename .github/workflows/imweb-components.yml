@@ -15,11 +15,9 @@ jobs:
       - name: Github checkout
         uses: actions/checkout@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
 
-      - name: imweb-component
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Deploy
         run: |
           git config user.email "86tkstar@gmail.com"
           git config user.name "onepunch-tk"
