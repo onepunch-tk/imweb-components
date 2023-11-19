@@ -21,4 +21,4 @@ jobs:
         run: |
           git add public/utils/util.js public/index.css
           git commit -m "Update index.js and index.css" || echo "No changes to commit"
-          git push
+          git push origin/master
