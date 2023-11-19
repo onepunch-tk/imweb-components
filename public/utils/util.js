@@ -1,7 +1,7 @@
-console.log("hello world1");
-console.log("hello world2");
-console.log("hello world3");
-console.log("hello world3");
-console.log("hello world3");
-console.log("hello world3");
-console.log("hello world3");
+const testFn = () => {
+  console.log("hello world");
+};
+
+document.addEventListener("scroll", (e) => {
+  console.log("scroll");
+});
