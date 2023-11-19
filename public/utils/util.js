@@ -5,7 +5,6 @@ document.addEventListener("scroll", (e) => {
 window.addEventListener("load", (e) => {
   console.log("load");
 });
-
-console.log("helloWorld");
-
-console.log("im tktktktkt");
+fetch("https://onepunch-tk.github.io/imweb-components/public/test.html")
+  .then((res) => res.text())
+  .then((data) => document.getElementById("main").innerHTML = data;);
