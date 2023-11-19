@@ -19,6 +19,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
+          git config user.email "86tkstar@gmail.com"
+          git config user.name "onepunch-tk"
           git add public/utils/util.js public/index.css
           git commit -m "Update index.js and index.css" || echo "No changes to commit"
-          git push origin/master
+          git push origin master
