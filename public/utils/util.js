@@ -5,3 +5,7 @@ const testFn = () => {
 document.addEventListener("scroll", (e) => {
   console.log("scroll");
 });
+
+window.addEventListener("load", (e) => {
+  console.log("load");
+});
