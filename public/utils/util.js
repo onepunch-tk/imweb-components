@@ -7,4 +7,4 @@ window.addEventListener("load", (e) => {
 });
 fetch("https://onepunch-tk.github.io/imweb-components/public/test.html")
   .then((res) => res.text())
-  .then((data) => (document.getElementById("main").innerHTML = data));
+  .then((data) => (document.querySelector("main").innerHTML = data));
