@@ -9,3 +9,5 @@ document.addEventListener("scroll", (e) => {
 window.addEventListener("load", (e) => {
   console.log("load");
 });
+
+console.log("helloWorld");
